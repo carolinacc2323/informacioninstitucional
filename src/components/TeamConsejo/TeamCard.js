@@ -5,7 +5,7 @@ import './TeamCard.css';
 const TeamCard = ({ title, description, image, text }) => {
   return (
     <>
-      <div className="container">
+      <div className="container" >
         <Helmet>
           <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
@@ -27,7 +27,7 @@ const TeamCard = ({ title, description, image, text }) => {
             <p>{description}</p>
             <p>{text}</p>
           </div>
-          <img width="200" src={image} alt={title} />
+          <img width="150" src={image} alt={title} />
         </div>
       </div>
     </>
