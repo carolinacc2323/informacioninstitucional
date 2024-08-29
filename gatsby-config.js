@@ -3,10 +3,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Informacion Institucional`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",  `gatsby-plugin-react-helmet`, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -14,4 +13,4 @@ module.exports = {
     },
     __key: "images"
   }]
-};
+}

@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .inicio{
+    background-image: url(../images/palacio.jpg);
+    background-size: cover;
+    height: 95vh;
+  }
