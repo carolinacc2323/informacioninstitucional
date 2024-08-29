@@ -1,17 +1,20 @@
 import React from 'react'
 import Navbar from '../components/Navbar/navbar';
-import ConsejoTeam from '../components/TeamConsejo/ConsejoTeam';
 import { StaticImage } from 'gatsby-plugin-image';
+import TeamCard from '../components/TeamConsejo/TeamCard';
+import gerenteImage from '../images/gerente1.jpg';
 
 const Consejo = () => {
   return (
     <>
     <Navbar/>
-    <br></br>
-    <ConsejoTeam/>
-    <br></br>
-    <img src='../images/gerente.jpg'/>
-    <StaticImage src='../images/gerente.jpg'/>
+    <TeamCard
+      title="MARÍA DOLORES MENÉNDEZ COMPANY"
+      description="GERENTE DE PATRIMONIO NACIONAL"
+      image={gerenteImage}
+      text="Buy Now"
+    />
+    <StaticImage src='../images/gerente1.jpg'/>
         <p style={{
             fontSize:'18px',
             fontFamily: 'Century Gothic, serif'
@@ -69,26 +72,12 @@ const Consejo = () => {
               fontSize:'16px',
               fontFamily: 'Georgia, serif'
             }}>GERENTE DE PATRIMONIO NACIONAL</p>
-        
-            
-              <p  style={{
-                fontSize:'16px',
-                fontFamily: 'Georgia, serif',
-                textAlign: 'justify'
-              }} className='mt-4'>
-              Es Licenciada en Ciencias Económicas y Empresariales, rama de Economía de la Empresa, por la Universidad Complutense de Madrid. Funcionaria en servicio activo de la Escala Técnica de Gestión de Organismos Autónomos y en excedencia del Cuerpo Técnico de Auditoría y Contabilidad, Executive Master in Public Administration (EMPA). ESADE.
-              <p style={{
-                fontSize:'16px',
-                fontFamily: 'Georgia, serif',
-                textAlign: 'justify'
-              }}>Ha trabajado como Subdirectora General de Administración Financiera y Oficialía Mayor en el Ministerio de Asuntos Económicos y Transformación Digital. Ha sido Secretaria General del Consejo Superior de Deportes y del Instituto Español de Oceanografía y Subdirectora General Adjunta de Administración Económica en la Secretaría General de la Dirección General de Tráfico.</p>
-              <p style={{
-                fontSize:'16px',
-                fontFamily: 'Georgia, serif',
-                textAlign: 'justify'
-              }}>Miembro del Consejo de Administración del Centro para el Desarrollo Tecnológico Industrial E.P.E. (CDTI).</p>
-            </p>
-            <br></br>
+            <TeamCard
+              title="MARÍA DOLORES MENÉNDEZ COMPANY"
+              description="GERENTE DE PATRIMONIO NACIONAL"
+              image={gerenteImage}
+              text="Es Licenciada en Ciencias Económicas y Empresariales, rama de Economía de la Empresa, por la Universidad Complutense de Madrid."
+            />
             <p style={{
             fontSize:'20px',
             fontFamily: 'Century Gothic, serif',
