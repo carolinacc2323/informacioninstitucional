@@ -1,29 +1,29 @@
 import React from 'react'
 import Navbar from '../components/Navbar/navbar';
+import Footer from "../components/Footer/footer"
 import { StaticImage } from 'gatsby-plugin-image';
 import TeamCard from '../components/TeamConsejo/TeamCard';
-import gerenteImage from '../images/gerente1.jpg';
-import rexy from '../components/TeamConsejo/ImagesTeam/3.jpg'
+import Maria from '../components/TeamConsejo/ImagesTeam/MariaDolores.jpg'
+import AnaM from '../components/TeamConsejo/ImagesTeam/AnaMaria.jpg'
+import Francisco from '../components/TeamConsejo/ImagesTeam/FranciscoBelil.jpg'
+import MAngeles from '../components/TeamConsejo/ImagesTeam/MAngeles.jpg'
+import Alberto from '../components/TeamConsejo/ImagesTeam/AlbertoHerrera.jpg'
+import MCarmen from '../components/TeamConsejo/ImagesTeam/MCarme.jpg'
+import Gregorio from '../components/TeamConsejo/ImagesTeam/GregorioMara.jpg'
+import Judit from '../components/TeamConsejo/ImagesTeam/JuditAlex.jpg'
+import JoseL from '../components/TeamConsejo/ImagesTeam/JoseLuis.jpg'
+import Domingo from '../components/TeamConsejo/ImagesTeam/DomingoMartinez.jpg'
+import Javier from '../components/TeamConsejo/ImagesTeam/JavierSolana.jpg' 
+import Juan from '../components/TeamConsejo/ImagesTeam/JuanTejedor.jpg'
+import MariaP from '../components/TeamConsejo/ImagesTeam/MariaPerez.jpg'
+import Samuel from '../components/TeamConsejo/ImagesTeam/SamuelAlonso.jpg'
+import Tomas from '../components/TeamConsejo/ImagesTeam/TomasSuarez.jpeg'
+
 
 const Consejo = () => {
   return (
     <>
-    <br></br><br></br><br></br>
     <Navbar/>
-    {/* <div style={{display:'flex'}}>
-      <TeamCard
-        title="MARÍA DOLORES MENÉNDEZ COMPANY"
-        description="GERENTE DE PATRIMONIO NACIONAL"
-        image={rexy}
-        text="Buy Now"
-      />
-      <TeamCard
-        title="MARÍA DOLORES MENÉNDEZ COMPANY"
-        description="GERENTE DE PATRIMONIO NACIONAL"
-        image={rexy}
-        text="Buy Now"
-      />
-    </div> */}
         <p style={{
             fontSize:'18px',
             fontFamily: 'Century Gothic, serif'
@@ -46,6 +46,7 @@ const Consejo = () => {
             fontSize:'16px',
             fontFamily: 'Georgia, serif'
           }}>PRESIDENTA DE PATRIMONIO NACIONAL</p>
+          <StaticImage src='../images/Ana.jpg' width={200} height={200}/>
               <p  style={{
                   fontSize:'16px',
                   fontFamily: 'Georgia, serif',
@@ -75,7 +76,7 @@ const Consejo = () => {
             <TeamCard
               title="MARÍA DOLORES MENÉNDEZ COMPANY"
               description="GERENTE DE PATRIMONIO NACIONAL"
-              image={gerenteImage}
+              image={Maria}
               text="Es Licenciada en Ciencias Económicas y Empresariales, rama de Economía de la Empresa, por la Universidad Complutense de Madrid."
             />
             <p style={{
@@ -83,86 +84,118 @@ const Consejo = () => {
               fontFamily: 'Century Gothic, serif',
               color: '#8F6F24'
             }}> CONSEJEROS</p>
-          <div style={{display:'flex'}}>
-            <TeamCard
-              title="ANA MARÍA ARIAS DE COSSÍO"
-              description="Doctora en Historia del Arte y catedrática emérita de la Universidad Complutense de Madrid"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="FRANCISCO BELIL CREIXELL"
-              description="Ingeniero Superior en la Universidad Politécnica de Cataluña"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="Mª ÁNGELES HERMOSILLA ÁLVAREZ"
-              description="Catedrática de Teoría de la Literatura y Literatura Comparada en la Universidad de Córdoba"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="ALBERTO HERRERA RODRÍGUEZ"
-              description="Subsecretario del Ministerio de Presidencia, Justicia y Relaciones con las Cortes"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="MARÍA DEL CARMEN IGLESIAS CANO"
-              description="Directora de la Real Academia de la Historia desde diciembre de 2014 (reelegida en 2018)"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="GREGORIO MARAÑÓN Y BERTRÁN DE LIS"
-              description="Presidente del Teatro Real y de la Fundación Ortega-Marañón."
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="JUDIT ALEXANDRA GONZÁLEZ PEDRAZ"
-              description="Secretaria general de la Presidencia del Gobierno"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="JOSÉ LUIS MARTÍNEZ-ALMEIDA NAVASQÜÉS"
-              description="Alcalde de Madrid"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="DOMINGO MARTÍNEZ PALOMO"
-              description="Secretario general de la Casa de su Majestad el Rey"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="JAVIER SOLANA DE MADARIAGA"
-              description="Doctor en Ciencias Físicas y catedrático por la Universidad Complutense de Madrid"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="JUAN TEJEDOR CARNERO"
-              description="Licenciado en Ciencias Económicas y Empresariales por la Universidad Complutense de Madrid y funcionario del Cuerpo Superior de Interventores y Auditores del Estado"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="MARÍA PÉREZ SÁNCHEZ-LAULHÉ"
-              description="Licenciada en Derecho por la Universidad Pontificia de Comillas (ICADE). Curso de Posgrado (Título de Experto) en Gestión Cultural en el Exterior por la Universidad Carlos III de Madrid (coorganizado por la AECID)"
-              image={rexy}
-              text=""
-            />
-            <TeamCard
-              title="SAMUEL ALONSO LLORENTE"
-              description="Maestro de Educación primaria"
-              image={rexy}
-              text=""
-            />
+          <div className='consejo' style={{
+              display: 'flex', 
+              flexWrap: 'wrap', 
+              justifyContent: 'space-between', 
+              order: 4,
+          }}>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="ANA MARÍA ARIAS DE COSSÍO"
+                description="Doctora en Historia del Arte y catedrática emérita de la Universidad Complutense de Madrid"
+                image={AnaM}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="FRANCISCO BELIL CREIXELL"
+                description="Ingeniero Superior en la Universidad Politécnica de Cataluña"
+                image={Francisco}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="Mª ÁNGELES HERMOSILLA ÁLVAREZ"
+                description="Catedrática de Teoría de la Literatura y Literatura Comparada en la Universidad de Córdoba"
+                image={MAngeles}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="ALBERTO HERRERA RODRÍGUEZ"
+                description="Subsecretario del Ministerio de Presidencia, Justicia y Relaciones con las Cortes"
+                image={Alberto}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="MARÍA DEL CARMEN IGLESIAS CANO"
+                description="Directora de la Real Academia de la Historia desde diciembre de 2014 (reelegida en 2018)"
+                image={MCarmen}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="GREGORIO MARAÑÓN Y BERTRÁN DE LIS"
+                description="Presidente del Teatro Real y de la Fundación Ortega-Marañón."
+                image={Gregorio}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="JUDIT ALEXANDRA GONZÁLEZ PEDRAZ"
+                description="Secretaria general de la Presidencia del Gobierno"
+                image={Judit}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="JOSÉ LUIS MARTÍNEZ-ALMEIDA NAVASQÜÉS"
+                description="Alcalde de Madrid"
+                image={JoseL}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="DOMINGO MARTÍNEZ PALOMO"
+                description="Secretario general de la Casa de su Majestad el Rey"
+                image={Domingo}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="JAVIER SOLANA DE MADARIAGA"
+                description="Doctor en Ciencias Físicas y catedrático por la Universidad Complutense de Madrid"
+                image={Javier}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="JUAN TEJEDOR CARNERO"
+                description="Licenciado en Ciencias Económicas y Empresariales por la Universidad Complutense de Madrid y funcionario del Cuerpo Superior de Interventores y Auditores del Estado"
+                image={Juan}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px'}}>
+              <TeamCard
+                title="MARÍA PÉREZ SÁNCHEZ-LAULHÉ"
+                description="Licenciada en Derecho por la Universidad Pontificia de Comillas (ICADE). Curso de Posgrado (Título de Experto) en Gestión Cultural en el Exterior por la Universidad Carlos III de Madrid (coorganizado por la AECID)"
+                image={MariaP}
+                text=""
+              />
+            </div>
+            <div style={{flexBasis: '30%', maxWidth: '30%', marginBottom: '20px', margin: '0 auto 20px auto'}}>
+              <TeamCard
+                title="SAMUEL ALONSO LLORENTE"
+                description="Maestro de Educación primaria"
+                image={Samuel}
+                text=""
+              />
+            </div>
           </div>
+
           <p style={{
             fontSize:'20px',
             fontFamily: 'Century Gothic, serif',
@@ -171,9 +204,10 @@ const Consejo = () => {
           <TeamCard
               title="TOMÁS SUÁREZ-INCLÁN GONZÁLEZ"
               description="Abogado del Estado (1992) y abogado del Estado Jefe en Patrimonio Nacional. Marzo 2019"
-              image={rexy}
+              image={Tomas}
               text=""
             />
+        <Footer/>
     </>
   )
 }
