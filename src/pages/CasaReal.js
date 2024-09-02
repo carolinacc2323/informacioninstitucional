@@ -102,8 +102,13 @@ function CasaReal(args) {
 
   const stylemain = {
     margin: '3em',
-    height: '51vh',
+    height: '55vh',
   };
+  const styleh1 ={
+    fontSize:'30px',
+    fontFamily: 'roboto_slabregular, Georgia, serif',
+    textAlign: 'center',
+  }
   const styleimg = {
     textAlign: 'center',
   }
@@ -118,6 +123,7 @@ function CasaReal(args) {
         <StaticImage src='../images/imagesCR/casareal.jpg' width={1000}/>
         </div>
         <main style={stylemain}>
+        <h1 style={styleh1}>Temas Destacados</h1>
           <div style={stylediv}>
             <Carousel activeIndex={activeIndex} next={next} previous={previous} style={{fontFamily: 'Georgia, serif'}}>
             <CarouselIndicators
