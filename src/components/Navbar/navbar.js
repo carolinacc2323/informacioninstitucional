@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
 import './navbar.css';
-import { StaticImage } from 'gatsby-plugin-image';
+import defaultLogo from "./logo.png";
 
-const Navbar = () => {
+const Navbar = ({ logoSrc = defaultLogo, logoWidth = 100 }) => {
   const [navbarBackground, setNavbarBackground] = useState(false);
-
   const handleScroll = () => {
     if (window.scrollY > 50) {
       setNavbarBackground(true);
@@ -13,22 +11,24 @@ const Navbar = () => {
       setNavbarBackground(false);
     }
   };
-
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   return (
     <nav className={`navbar ${navbarBackground ? 'navbar-background' : ''}`}>
-      <div className="logo"><StaticImage src='../images/logopatri.jpg'/></div>
-      <ul className="nav-links">
-        <li><Link to="/Bienvenida">Inicio</Link></li>
-        <li><Link to="/Conoce">Historia</Link></li>
-        <li><Link to="/Consejo">Consejo</Link></li>
-        <li><Link to="/ActosOficiales">Actos</Link></li>
+      <div className="logo">
+        <img src={logoSrc} width={logoWidth} alt="Logo" />
+      </div>
+      <ul className="nav-linkes">
+        <li><a href='/'>Inicio</a></li>
+        <li><a href="/Conoce">Historia</a></li>
+        <li><a href="/Consejo">Consejo</a></li>
+        <li><a href="/ActosOficiales">Actos</a></li>
+        <li><a href="/Retratos">Retratos Oficiales</a></li>
+        <li><a href="/Ministerio">Ministerio de la presidencia</a></li>
       </ul>
     </nav>
   );
