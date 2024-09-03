@@ -5,7 +5,7 @@ import Footer from "../components/Footer/footer"
 const Actos = () => {
   const stylemain ={
     margin: '3em',
-    height: '73vh',
+    height: '67.5vh',
   }
   const stylep ={
     fontSize:'16px',

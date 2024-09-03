@@ -23,12 +23,13 @@ const Navbar = ({ logoSrc = defaultLogo, logoWidth = 100 }) => {
         <img src={logoSrc} width={logoWidth} alt="Logo" />
       </div>
       <ul className="nav-linkes">
-        <li><a href='/'>Inicio</a></li>
-        <li><a href="/Conoce">Historia</a></li>
-        <li><a href="/Consejo">Consejo</a></li>
-        <li><a href="/ActosOficiales">Actos</a></li>
-        <li><a href="/Retratos">Retratos Oficiales</a></li>
-        <li><a href="/Ministerio">Ministerio de la presidencia</a></li>
+        <li><a href='/'>INICIO</a></li>
+        <li><a href="/Conoce">NUESTRA HISTORIA</a></li>
+        <li><a href="/Consejo">CONSEJO DE ADMINISTRACION</a></li>
+        <li><a href="/ActosOficiales">ACTOS OFICIALES E INSTITUCIONALES</a></li>
+        <li><a href="/CasaReal">CASA DE S.M. el Rey</a></li>
+        <li><a href="/Retratos">RETRATOS OFICIALES</a></li>
+        <li><a href="/Ministerio">MINISTERIO DE LA PRESIDENCIA</a></li>
       </ul>
     </nav>
   );

@@ -19,23 +19,28 @@ import infanta from '../components/Retratos/fotoretratos/infanta.jpg';
 
 const Retratos = () => {
 const stylemain ={
-  margin: '2em'
+  margin: '3em'
 }
 const styleh1 ={
-  fontSize: '40px',
+  fontSize: '30px',
   color: 'black',
-  fontWeight:'bold',
+  fontFamily: 'Georgia, serif',
 }
 const styleh2 ={
   color: '#9D6F24',
-  fontSize: '30px',
-  fontWeight:'lighter',
+  fontSize: '20px',
+  fontFamily: 'Century Gothic, serif',
+}
+const stylep ={
+  fontSize: '14px',
+  fontFamily: 'Century Gothic, serif',
 }
 
   return (
     <>
     <Navbar/>
     <main style={stylemain}>
+      <p style={stylep}>NOSOTROS</p>
       <h1 style={styleh1}>RETRATOS DE SS.MM.</h1>
       <h2 style={styleh2}>RETRATOS OFICIALES DE SU MAJESTAD EL REY</h2>
       <div 

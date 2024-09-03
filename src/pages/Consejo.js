@@ -20,10 +20,9 @@ import MariaP from '../components/TeamConsejo/ImagesTeam/MariaPerez.jpg'
 import Samuel from '../components/TeamConsejo/ImagesTeam/SamuelAlonso.jpg'
 import Tomas from '../components/TeamConsejo/ImagesTeam/TomasSuarez.jpeg'
 
-
 const Consejo = () => {
   const stylemain ={
-    margin: '2em'
+    margin: '3em'
   }
   const styleh1 ={
     fontSize:'30px',
@@ -36,7 +35,7 @@ const Consejo = () => {
   }
   const styleh3 ={
     fontSize:'18px',
-    fontFamily: 'Century Gothic, serif'
+    fontFamily: 'Century Gothic, serif',
   }
   const styleh4 ={
     fontSize:'16px',

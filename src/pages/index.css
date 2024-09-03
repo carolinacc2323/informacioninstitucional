@@ -1,10 +1,37 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.inicio{
+  background-image: url(../images/palacio.jpg);
+  background-size: cover;
+  height: 95vh;
+}
+@keyframes rebote {
+  0% {
+    transform: translateY(0);
   }
-  .inicio{
-    background-image: url(../images/palacio.jpg);
-    background-size: cover;
-    height: 95vh;
+  50% {
+    transform: translateY(-20px);
   }
+  100% {
+    transform: translateY(0);
+  }
+}
+#btn {
+  animation: rebote 1s infinite;
+}
+
+.inicio button a {
+  text-decoration: none;
+  color: white;
+}
+#btn{
+  margin-top: 420px;
+  margin-left: 685px;
+  padding: 0.5em;
+  background-color: #005bb5;
+  border: #005bb5;
+  border-radius: 10px;
+}
