@@ -17,6 +17,7 @@ import Guatemala from '../images/imagesCR/Guatemala.jpg'
 import Juramento from '../images/imagesCR/Juramento.jpg'
 import Posesion from '../images/imagesCR/Posesion.jpg'
 import Reyes from '../images/imagesCR/ReyyPrincesa.jpg'
+import './CasaReal.css'
 
 const items = [
   {
@@ -95,6 +96,7 @@ function CasaReal(args) {
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
+          className="custom-caption"
         />
       </CarouselItem>
     );
@@ -108,43 +110,51 @@ function CasaReal(args) {
     fontSize:'30px',
     fontFamily: 'roboto_slabregular, Georgia, serif',
     textAlign: 'center',
-  }
+  };
   const styleimg = {
     textAlign: 'center',
-  }
+  };
+  const stylelogo = {
+    textAlign: 'center',
+    marginBottom:'3em',
+  };
   const stylediv ={
     textAlign: 'center',
-  }
+  };
+
   return (
     <>
-      <Navbar logoSrc={logoCR} logoWidth={400}/>
-      <br></br>
+      <Navbar />
+      <br />
+      <div style={stylelogo}>
+        <img src={logoCR} alt="Logotipo Casa Real" />
+      </div>
       <div style={styleimg}>
         <StaticImage src='../images/imagesCR/casareal.jpg' width={1000}/>
-        </div>
-        <main style={stylemain}>
+      </div>
+      <main style={stylemain}>
         <h1 style={styleh1}>Temas Destacados</h1>
-          <div style={stylediv}>
-            <Carousel activeIndex={activeIndex} next={next} previous={previous} style={{fontFamily: 'Georgia, serif'}}>
+        <div style={stylediv}>
+          <Carousel activeIndex={activeIndex} next={next} previous={previous} style={{fontFamily: 'Georgia, serif'}}>
             <CarouselIndicators
-                items={items}
-                activeIndex={activeIndex}
-                onClickHandler={goToIndex}
+              items={items}
+              activeIndex={activeIndex}
+              onClickHandler={goToIndex}
             />
             {slides}
             <CarouselControl
-                direction="prev"
-                directionText="Previous"
-                onClickHandler={previous}
+              direction="prev"
+              directionText="Previous"
+              onClickHandler={previous}
             />
             <CarouselControl
-                direction="next"
-                directionText="Next"
-                onClickHandler={next}
+              direction="next"
+              directionText="Next"
+              onClickHandler={next}
             />
-            </Carousel>
-            </div>
-        </main>
+          </Carousel>
+        </div>
+      </main>
       <Footer />
     </>
   );

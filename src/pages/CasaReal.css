@@ -1,0 +1,9 @@
+.custom-caption {
+    background-color: #03111e74; /* Fondo semitransparente */
+    padding: 10px; /* Espaciado interno */
+    font-size: 1.2rem; /* Ajuste del tamaño de la letra */
+    text-align: center;
+    font-family: 'Georgia, serif';
+    margin-left: 9.55em;
+    margin-right: 9.55em;
+}
